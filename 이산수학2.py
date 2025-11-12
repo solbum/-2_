@@ -96,6 +96,8 @@ def symmetric_closure(matrix):
                 continue
             if matrix[i][j] == 1:
                 matrix[j][i] = 1
+            elif matrix[j][i] == 1:
+                matrix[i][j] = 1
 
     print("대칭 폐포 변환 후:")
     print_matrix(matrix)
